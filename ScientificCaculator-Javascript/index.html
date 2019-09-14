@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Knf</title>
+<!-- Tell the browser to be responsive to screen width -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Font Awesome -->
+<link rel="stylesheet"
+	href="all.min.css">
+<!-- Ionicons -->
+<link rel="stylesheet"
+	href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<!-- overlayScrollbars -->
+<link rel="stylesheet"
+	href="OverlayScrollbars.min.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="adminlte.min.css">
+<!-- Google Font: Source Sans Pro -->
+<link
+	href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700"
+	rel="stylesheet">
+</head>
+<body class="hold-transition layout-top-nav">
+	<!-- Site wrapper -->
+	<div class="wrapper">
+		<!-- Navbar -->
+		<nav
+			class="main-header navbar navbar-expand navbar-white navbar-light">
+			<!-- Left navbar links -->
+			<ul class="navbar-nav">
+				
+				<li class="nav-item d-none d-sm-inline-block"><a href="aesview"
+					class="nav-link">Scientific Calculator</a></li>
+				
+			</ul>
+
+
+
+
+
+		</nav>
+
+
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper">
+			<!-- Content Header (Page header) -->
+			<section class="content-header">
+				<div class="container-fluid">
+					<div class="row mb-2">
+						<div class="col-sm-6">
+							
+						</div>
+						<div class="col-sm-6">
+							<ol class="breadcrumb float-sm-right">
+								<li class="breadcrumb-item"><a href="https://www.knowledgefactory.net/p/donate.html">About Us</a></li>
+
+							</ol>
+						</div>
+					</div>
+				</div>
+				<!-- /.container-fluid -->
+			</section>
+
+			<!-- Main content -->
+			<section class="content">
+
+				<div class="container-fluid">
+					<div class="row">
+					<div class="col-md-2"></div>
+						<div class="col-md-8">
+							<!-- general form elements -->
+							<div class="card card-primary">
+								<div class="card-header">
+									<h3 class="card-title">Scientific Calculator</h3>
+								</div>
+								<FORM NAME="sci-calc">
+<TABLE CELLSPACING="0" CELLPADDING="1" class="table">
+<TR>
+<TD COLSPAN="5" ALIGN="center"><div class="form-group">
+                    
+                    <input NAME="display" type="text" class="form-control" >
+                  </div></TD>
+</TR>
+<TR>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE=" exp " ONCLICK="if (checkNum(this.form.display.value)) { exp(this.form) }"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="  7  " ONCLICK="addChar(this.form.display, '7')"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="  8  " ONCLICK="addChar(this.form.display, '8')"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="  9  " ONCLICK="addChar(this.form.display, '9')"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="   /   " ONCLICK="addChar(this.form.display, '/')"></TD>
+</TR>
+<TR>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="   ln   " ONCLICK="if (checkNum(this.form.display.value)) { ln(this.form) }"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="  4  " ONCLICK="addChar(this.form.display, '4')"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="  5  " ONCLICK="addChar(this.form.display, '5')"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="  6  " ONCLICK="addChar(this.form.display, '6')"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="   *   " ONCLICK="addChar(this.form.display, '*')"></TD>
+</TR>
+<TR>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE=" sqrt " ONCLICK="if (checkNum(this.form.display.value)) { sqrt(this.form) }"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="  1  " ONCLICK="addChar(this.form.display, '1')"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="  2  " ONCLICK="addChar(this.form.display, '2')"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="  3  " ONCLICK="addChar(this.form.display, '3')"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="   -   " ONCLICK="addChar(this.form.display, '-')"></TD>
+</TR>
+<TR>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="  sq  " ONCLICK="if (checkNum(this.form.display.value)) { square(this.form) }"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="  0  " ONCLICK="addChar(this.form.display, '0')"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="   .  " ONCLICK="addChar(this.form.display, '.')"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE=" +/- " ONCLICK="changeSign(this.form.display)"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="   +  " ONCLICK="addChar(this.form.display, '+')"></TD>
+</TR>
+<TR>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="    (    " ONCLICK="addChar(this.form.display, '(')"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="cos" ONCLICK="if (checkNum(this.form.display.value)) { cos(this.form) }"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE=" sin" ONCLICK="if (checkNum(this.form.display.value)) { sin(this.form) }"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE=" tan" ONCLICK="if (checkNum(this.form.display.value)) { tan(this.form) }"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-success btn-sm" TYPE="button" VALUE="   )   " ONCLICK="addChar(this.form.display, ')')"></TD>
+</TR>
+<TR>
+<TD ALIGN="center"><INPUT class="btn btn-dark btn-lg" TYPE="button" VALUE="clear" ONCLICK="this.form.display.value = 0 "></TD>
+<TD ALIGN="center" COLSPAN="3"><INPUT class="btn btn-dark btn-lg" TYPE="button" VALUE="backspace" ONCLICK="deleteChar(this.form.display)"></TD>
+<TD ALIGN="center"><INPUT class="btn btn-dark btn-lg" TYPE="button" VALUE="enter" NAME="enter" ONCLICK="if (checkNum(this.form.display.value)) { compute(this.form) }"></TD>
+</TR>
+</TABLE>
+</FORM>
+
+
+
+							</div>
+							<!-- /.card -->
+
+						</div>
+
+
+
+
+					</div>
+				</div>
+		</div>
+		</section>
+		<!-- /.content -->
+	</div>
+	<!-- /.content-wrapper -->
+
+	<footer class="main-footer">
+		<div class="float-right d-none d-sm-block">
+			<b>Version</b> 1.0.0
+		</div>
+		<strong>Copyright &copy; 2014-2019 <a
+			href="http://www.knowledgefactory.net">Knowledge Factory(knowledgefactory4upeoples@gmail.com)</a>.
+		</strong> All rights reserved.
+	</footer>
+
+	<!-- Control Sidebar -->
+	<aside class="control-sidebar control-sidebar-dark">
+		<!-- Control sidebar content goes here -->
+	</aside>
+	<!-- /.control-sidebar -->
+	</div>
+	<!-- ./wrapper -->
+
+	<!-- jQuery -->
+	<script src="jquery.min.js"></script>
+	<!-- Bootstrap 4 -->
+	<script src="bootstrap.bundle.min.js"></script>
+	<!-- overlayScrollbars -->
+	<script
+		src="jquery.overlayScrollbars.min.js"></script>
+
+	<script src="adminlte.min.js"></script>
+	<script src="controller.js"></script>
+
+</body>
+</html>

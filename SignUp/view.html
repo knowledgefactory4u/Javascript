@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Knowledgefactory-Sign Up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+.form-style {
+  background-image: linear-gradient(to right,#D3D3D3,white);;
+}
+.note
+{
+    text-align: center;
+    height: 80px;
+    background: -webkit-linear-gradient(left,#32CD32,#7CFC00 );
+    color: #fff;
+    font-weight: bold;
+    line-height: 80px;
+}
+.form-content
+{
+    padding: 5%;
+    border: 1px solid #ced4da;
+    margin-bottom: 2%;
+}
+.form-control{
+    border-radius:1.5rem;
+}
+.btnSubmit
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    color: #fff;
+	background: -webkit-linear-gradient(left,#32CD32,#7CFC00 );
+	
+}
+.btnSubmit:hover {
+  background: -webkit-linear-gradient(left,#FF0000,	#800000 );
+}
+</style>
+<body class="form-style">
+ <form name="signForm" method="post" action="signForm" onSubmit="return checkform()">
+  <div class="container register-form">
+            <div class="form">
+                <div class="note">
+                    <p>Simple Responsive Sign Up Form</p>
+                </div>
+
+                <div class="form-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name *" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Email *" value=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Password *" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Confirm Password *" value=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btnSubmit">Submit</button>
+                </div>
+            </div>
+    </div>
+ </form>
+</body>
+<script>
+</html>

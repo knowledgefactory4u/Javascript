@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+#knf-users {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#knf-users td, #knf-users th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#knf-users tr:nth-child(even){background-color: #f2f2f2;}
+
+#knf-users tr:hover {background-color: #ddd;}
+
+#knf-users th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #800080;
+  color: white;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<table class="table" id="knf-users">
+<thead>
+  <tr>
+    <th>User Name</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  </thead>
+  <tr>
+    <td>Sibin</td>
+    <td>knowledgefactory4upeoples@gmail.com</td>
+    <td>India</td>
+  </tr>
+  <tr>
+    <td>Safin</td>
+    <td>Safin@gmail.com</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Chinju</td>
+    <td>chinju@gmail.com</td>
+    <td>Japan</td>
+  </tr>
+  <tr>
+    <td>Rahul</td>
+    <td>Rahul@gmail.com</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Arnold</td>
+    <td>Arnold@gmail.com</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Esthar</td>
+    <td>Esthar@gmail.com</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Azizi</td>
+    <td>Azizi@gmail.com</td>
+    <td>UAE</td>
+  </tr>
+  <tr>
+    <td>Mizolini</td>
+    <td>Mizolini@gmail.com</td>
+    <td>Italy</td>
+  </tr>
+</table>
+<div class="form-group">
+  <label for="comment">JSON view:</label>
+  <textarea id="out-put"class="form-control" rows="5" id="comment"></textarea>
+</div>
+</div>
+</body>
+
+<script>
+var myRows = { myRows: [] };
+
+var $th = $('table th');
+$('table tbody tr').each(function(i, tr){
+    var obj = {}, $tds = $(tr).find('td');
+    $th.each(function(index, th){
+        obj[$(th).text()] = $tds.eq(index).text();
+    });
+    myRows.myRows.push(obj);
+});
+//alert(JSON.stringify(myRows));
+$('#out-put').html(JSON.stringify(myRows));
+</script>
+
+</html>

@@ -4,6 +4,9 @@
   "articles": [
     { "id": "1", "title": "Spring Boot" },
     { "id": "2", "title": "Kotlin" },
-    { "id": "3", "title": "Javascript" }
+    { "id": "3", "title": "Javascript" },
+    { "id": "4", "title": "python" },
+    { "id": "5", "title": "php" },
+    { "id": "6", "title": "Angular" }
   ]
 }

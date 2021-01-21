@@ -1,0 +1,9 @@
+{
+  "title": "KnowledgeFactory",
+  "description": "Fetch remote data from KnowledgeFactory",
+  "articles": [
+    { "id": "1", "title": "Spring Boot" },
+    { "id": "2", "title": "Kotlin" },
+    { "id": "3", "title": "Javascript" }
+  ]
+}
